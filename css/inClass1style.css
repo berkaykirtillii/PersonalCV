@@ -1,0 +1,13 @@
+
+.mainMenu>ul{
+    list-style-type: none
+}
+.mainMenu>ul>li{
+    display:inline;
+    margin-right:15%;
+    margin-left:3%;
+}
+.mainMenu>ul>li>a{
+    text-decoration: none;
+    font-size:30px;
+}
