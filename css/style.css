@@ -28,10 +28,17 @@ p{
     text-align: center;
     margin-top:5%;
 }
+
 .biography{
     width: 40%;
     margin-left: 30%;
 }
+@media screen and (max-width: 750px) {
+    .biography{
+        width: 60% ;
+        margin-left:20% ;
+    }
+  }
 .activities{
     text-align: center;
 }

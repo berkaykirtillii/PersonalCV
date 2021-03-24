@@ -42,3 +42,8 @@ tbody tr:last-child td{
  vertical-align: top;
  font-weight: bold;
 }
+
+.table{
+	border:solid 1px black;
+	margin-top:5%;
+}
