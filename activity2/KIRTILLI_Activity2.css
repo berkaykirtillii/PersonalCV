@@ -43,7 +43,7 @@ tbody tr:last-child td{
  font-weight: bold;
 }
 
-.employeeTable{
+div{
 	border:solid 1px black;
 	margin-top:5%;
 }
