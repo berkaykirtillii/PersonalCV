@@ -1,0 +1,36 @@
+/*
+Lab 3 CSS styles
+CSS styles for Ultimate frisbee page
+*/
+
+body {
+  color: wheat;
+  font: 12pt "Tahoma", "Arial", sans-serif;
+  background-image: url("background.jpg");
+  background-size: cover;
+}
+.container{
+  width: 50%;
+  margin-left: 5%;
+}
+h1,h2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+img{
+ border: solid 2px #964b00;
+}
+ul li{
+  list-style-type: circle;
+}
+th,td{
+  border: solid 2px black;
+}
+tr:nth-child(even) td{
+  background-color: chocolate;
+}
+footer,.validate {
+text-align:center;
+}
+.validate a{
+  color:greenyellow;
+}
