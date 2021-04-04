@@ -1,0 +1,38 @@
+.advertisement
+{
+	width:100px;
+	height:150px; 
+	border-color:black;
+	border-width:2px; 
+	background-color:gray; 
+	color:white;
+	position: absolute;
+    top: 4%;
+    left: 3%;
+}
+div:nth-child(-n+2){
+	position:relative;
+	left:9%;
+}
+.header, .content, .image{
+	width:70%;
+}
+.header .logo{
+	float:left;
+	left:8%;
+}
+.header .title{
+	padding-top:1%;
+}
+.content{
+	width:70%;
+	clear:left;
+}
+.image img{
+	width:300px;
+	float:left;
+	margin:1%;
+}
+.head{
+	text-align: center;
+}
