@@ -1,13 +1,13 @@
 .advertisement
 {
-	width:100px;
-	height:150px; 
-	border-color:black;
-	border-width:2px; 
-	background-color:gray; 
-	color:white;
-	position: absolute;
-    top: 4%;
+	width: 100px;
+    height: 150px;
+    border-color: black;
+    border-width: 2px;
+    background-color: gray;
+    color: black;
+    position: absolute;
+    top: 1%;
     left: 3%;
 }
 div:nth-child(-n+2){
