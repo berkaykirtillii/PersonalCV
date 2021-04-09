@@ -1,0 +1,18 @@
+input[type="text"],
+input[type="password"],
+select,
+input[type="number"],
+input[type="email"],
+textarea[type="text"],
+input[type="submit"],
+.gender-input,
+.language-input{
+    position: absolute;
+    left:85px;
+}
+.gender,.language{
+    display:flex;
+}
+input[type="submit"]{
+    margin-top: 2%;
+}
