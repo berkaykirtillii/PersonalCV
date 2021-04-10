@@ -32,9 +32,9 @@
          <div class="gender">
          Sex:
             <div class="gender-input">
-              <input type="radio" id="radio1" name="Gender" value="Male">
+              <input type="radio" id="radio1" name="Gender" value="Male" >
               <label>Male</label>
-              <input type="radio" name="Gender" value="Female">
+              <input type="radio" name="Gender" value="Female" >
               <label>Female</label>
             </div>
          </div>

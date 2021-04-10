@@ -7,8 +7,21 @@ $address = $_REQUEST['Address'];
 $country = $_REQUEST['Country'];
 $zipcode = $_REQUEST['Zipcode'];
 $email = $_REQUEST['E-mail'];
-$gender = $_REQUEST['Gender'];
-$language = $_REQUEST['Language'];
+
+if(empty($_REQUEST['Gender'])==true){
+  $gender = NULL ;
+}
+else{
+  $gender = $_REQUEST['Gender'];
+}
+
+if(empty($_REQUEST['Language'])==true){
+  $language = NULL ;
+}
+else{
+  $language = $_REQUEST['Language'];
+}
+
 $about = $_REQUEST['About'];
 
 $array = array("Name"=>$name,"Username"=>$username,"Password"=>$password,
@@ -25,7 +38,7 @@ $array = array("Name"=>$name,"Username"=>$username,"Password"=>$password,
   <body>
     <?php 
       foreach($array as $key => $value){
-        if($value != NULL){
+        if($value != NULL){ 
           echo $value."<br/>";
         }
         else{
