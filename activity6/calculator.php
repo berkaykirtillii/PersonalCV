@@ -45,7 +45,7 @@
         <div class='row'>
           <div class='col-md-3 offset-3 left-col'>
             <label>From: </label>
-            <input type='number' name='amount' value='$amount' class='form-input'>  
+            <input type='number' name='amount' value='$amount' required>  
           </div>
           <div class='col-md-3'>
             <label>Currency: </label>
