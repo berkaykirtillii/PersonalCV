@@ -1,28 +1,21 @@
 <?php
 
-$name = $_REQUEST['Name'];
-$username = $_REQUEST['Username'];
-$password= $_REQUEST['Password'];
-$address = $_REQUEST['Address'];
-$country = $_REQUEST['Country'];
-$zipcode = $_REQUEST['Zipcode'];
-$email = $_REQUEST['E-mail'];
+$name = $_REQUEST["Name"];
+$username = $_REQUEST["Username"];
+$password= $_REQUEST["Password"];
+$address = $_REQUEST["Address"];
+$country = $_REQUEST["Country"];
+$zipcode = $_REQUEST["Zipcode"];
+$email = $_REQUEST["E-mail"];
+$about = $_REQUEST["About"];
 
-if(empty($_REQUEST['Gender'])==true){
+if(empty($_REQUEST["Gender"]) == true){
   $gender = NULL ;
 }
 else{
-  $gender = $_REQUEST['Gender'];
+  $gender = $_REQUEST["Gender"];
 }
-
-if(empty($_REQUEST['Language'])==true){
-  $language = NULL ;
-}
-else{
-  $language = $_REQUEST['Language'];
-}
-
-$about = $_REQUEST['About'];
+$language = NULL;
 
 $array = array("Name"=>$name,"Username"=>$username,"Password"=>$password,
 "Address"=>$address,"Country"=>$country,"Zipcode"=>$zipcode,
@@ -36,13 +29,21 @@ $array = array("Name"=>$name,"Username"=>$username,"Password"=>$password,
     <title>Activity 5</title>   
   </head>
   <body>
+    <h1>Preview</h1>
     <?php 
       foreach($array as $key => $value){
         if($value != NULL){ 
           echo $value."<br/>";
         }
         else{
-          echo $key.": Not Provided"."<br/>";
+          if($key == "Language" && empty($_REQUEST["Language"]) == false){
+            for($i = 0 ; $i < count($_REQUEST["Language"]) ; $i++){
+              echo $_REQUEST["Language"][$i]."<br/>";  
+            }
+          }
+          else{
+            echo $key.": Not Provided"."<br/>";
+          }
         }
       }
     ?>

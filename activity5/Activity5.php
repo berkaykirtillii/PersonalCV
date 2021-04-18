@@ -14,7 +14,7 @@
   crossorigin="anonymous"></script>
   </head>
   <body>
-
+    <h1>Registration Form</h1>
     <form action="Activity5-Preview.php" method="post">
       Name: <input type="text" name="Name"/><br/><br/> 
       Username: <input type="text" name="Username"/><br/><br/> 
@@ -22,6 +22,7 @@
       Adress: <input type="text" name="Address"/><br/><br/> 
       <label>Country:</label>
       <select name="Country">
+        <option value="">Choose Country </option> 
         <option value="America">America</option>
         <option value="Turkey">Turkey</option>
         <option value="England">England</option>
@@ -43,11 +44,11 @@
         Language: 
            <div class="language-input">
               <label> English</label>
-              <input type="checkbox" name="Language" class="one-check" value="English" >
+              <input type="checkbox" name="Language[]" value="English" >
               <label> French</label>
-              <input type="checkbox" name="Language" class="one-check" value="French">
+              <input type="checkbox" name="Language[]" value="French">
               <label> German</label>
-              <input type="checkbox" name="Language" class="one-check" value="German">
+              <input type="checkbox" name="Language[]" value="German">
            </div>  
         </div> 
         <br/>
@@ -55,10 +56,5 @@
 	    <input type="submit" value="submit"/>
 	</form>
 
-  <script> 
-    $('.one-check').on('click', function() {
-      $('.one-check').not(this).prop('checked', false);  
-    });
-  </script>
   </body>
 </html>
