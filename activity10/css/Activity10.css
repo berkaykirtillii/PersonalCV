@@ -1,0 +1,14 @@
+.inp-row{
+    margin-bottom:20px;
+}
+form .inp-row:first-child{
+    display: inline-flex;
+}
+form .inp-row:first-child label{
+    display: block;
+    width:180px;
+}
+.inp-row input{
+    position: absolute !important;
+    left: 180px !important;
+}
