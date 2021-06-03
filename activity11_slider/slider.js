@@ -3,6 +3,7 @@ $(document).ready(function() {
     $("#slider").bxSlider({
 		auto: true,
 		randomStart: true,
+		moveSlides: 1,
 		speed: 3000,
 		pager: true,
 		pagerType: 'short',
