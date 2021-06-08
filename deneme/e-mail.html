@@ -1,0 +1,291 @@
+<html>
+<head><meta charset="UTF-8"/><meta content="IE=edge" http-equiv="X-UA-Compatible"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>QuakeLogic Partnership</title>
+  <script
+          crossorigin="anonymous"
+          src="https://kit.fontawesome.com/e896da0d67.js"
+  ></script><!--These 4 links about bootstrap-->
+  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" rel="stylesheet" /><script
+          crossorigin="anonymous"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  ></script><script
+          crossorigin="anonymous"
+          integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+          src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+  ></script><script
+          crossorigin="anonymous"
+          integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+          src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+  ></script><!--These 2 links for font style-->
+  <link href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&amp;display=swap" rel="stylesheet" />
+  <style type="text/css">body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #f1f1f1;
+    width: 100%;
+  }
+
+  .container {
+    max-width: 600px;
+    background-color: white;
+    padding: 0;
+    margin: 3% auto 3% auto;
+  }
+
+  header {
+    position: relative;
+    min-height: 25%;
+    box-shadow: inset 0px 0px 20px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  main {
+    position: relative;
+    padding: 7% 0;
+    background-color: white;
+    overflow: visible;
+    z-index: 1;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  main:before {
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  main:before,
+  main:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    transform-origin: left top;
+    transform: skewY(-6deg);
+  }
+
+  main:after {
+    left: 0;
+    bottom: 0;
+    transform-origin: right bottom;
+    transform: skewY(-6deg);
+  }
+
+  footer {
+    background-color: #f06624;
+    text-align: center;
+    padding-bottom: 1%;
+    box-shadow: inset 0px 0px 20px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .quakelogic-logo {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  #logo {
+    width: 300px;
+  }
+
+  main h1 {
+    color: #f06624;
+    text-align: center;
+    font-weight: bold;
+    font-size: 21px;
+    width: 65%;
+    margin: auto;
+    font-family: system-ui;
+  }
+
+  main hr,
+  footer hr {
+    width: 45%;
+    border: none;
+    height: 50px;
+    border-bottom: 1px solid white;
+    box-shadow: 0 20px 20px -16px #d4d3d3;
+    margin: -40px auto 20px;
+  }
+
+  main hr {
+    margin-bottom: 7% !important;
+  }
+
+  footer hr {
+    width: 35%;
+    border-bottom: 1px solid #f06624;
+    -webkit-box-shadow: -1px -24px 19px -15px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: -1px -24px 19px -15px rgba(0, 0, 0, 0.3);
+    box-shadow: -1px -24px 19px -15px rgba(0, 0, 0, 0.3);
+  }
+
+  .product .product-info p {
+    margin-right: 5%;
+    font-size: 13px;
+  }
+
+  #learn-more {
+    background-color: #414141;
+    color: White;
+    padding: 13px;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+    margin-left: 52%;
+  }
+
+  footer h2 {
+    padding-top: 13%;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+  }
+
+  footer p,
+  footer a {
+    color: White;
+    margin: 0;
+  }
+
+  footer a:hover {
+    text-decoration: none;
+    color: rgb(209, 204, 204);
+  }
+
+  .social-icons a i {
+    margin-left: 2%;
+    margin-bottom: 2%;
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+  }
+
+  .social-icons a .fa-facebook-f,
+  .social-icons a .fa-instagram,
+  .social-icons a .fa-linkedin-in {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #web-link {
+    font-size: 18px;
+    font-weight: bolder;
+  }
+
+  .copyright {
+    display: inline-flex;
+  }
+
+  .unsub-view {
+    font-weight: bold;
+    border-bottom: 1px solid #414141;
+    color: white;
+  }
+
+  .unsub-view:hover {
+    color: #414141;
+    border-bottom: 1px solid white;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .container {
+      margin: 0;
+      max-width: 100% !important;
+    }
+
+    .product-photo {
+      margin: auto;
+      width: 95%;
+    }
+
+    .product-info {
+      margin-top: 5%;
+    }
+
+    #logo {
+      width: 250px;
+      margin-left: -11%;
+    }
+
+    .product-info {
+      margin: 5% 0% 0% 5%;
+    }
+
+    #learn-more {
+      margin: auto;
+      display: block;
+    }
+
+    #learn-more:hover {
+      cursor: pointer;
+    }
+
+    .copyright {
+      display: block;
+    }
+  }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="quakelogic-logo"><!--Logo is here, If you want to change it, change img src--><img alt="QuakeLogic" id="logo" src="https://www.quakelogic.net/img/logos/quakelogic_logo.png" /></div>
+  </header>
+
+  <main>
+    <h1>PORTABLE SHAKE TABLE FOR YOUR RESEARCH LAB</h1>
+
+    <hr />
+    <div class="row product"><!--Product image is here, you can change from here--><img alt="quakelogic" class="col-md-6 col-sm-12 product-photo" src="https://www.quakelogic.net/marketing/img/shaketable.jpg" />
+      <div class="col-md-6 col-sm-12 product-info">
+        <p>Dear [Name],</p>
+
+        <p><a href="https://www.quakelogic.net/infrasound-sensors" target="_blank"><strong>QUAKELOGIC</strong></a> offers a single-axis SHAKE TABLE ideal for research and education.</p>
+
+        <p>The portable shake tables are often used for earthquake engineering, structural dynamics, vibration isolation, sensor calibration, feedback control, and other topics related to civil, geophysics, aerospace and mechanical engineering.</p>
+
+        <p>To own one, contact <strong><a href="mailto:sales@quakelogic.net">sales@quakelogic.net</a></strong></p>
+      </div>
+    </div>
+    <button id="learn-more">LEARN MORE</button></main>
+
+  <footer>
+    <h2>QUAKELOGIC</h2>
+    &nbsp;
+
+    <p>+1-916-258-3736</p>
+    <a href="mailto:sales@quakelogic.net">sales@quakelogic.net</a><br />
+    <br />
+    <br />
+    <a href="https://quakelogic.net/" id="web-link">quakelogic.net</a>
+
+    <hr />
+    <div class="social-icons">&nbsp;</div>
+
+    <div class="copyright">
+      <p><span>Copyright 2021&nbsp;QUAKELOGIC&nbsp;&copy; </span></p>
+
+      <div class="footer-links"><unsubscribe><span style="color:white;">|</span> <span class="unsub-view"> Unsubscribe</span> </unsubscribe> <span style="color:white;">|</span> <webversion class="unsub-view">&nbsp;<span>View in browser</span></webversion></div>
+
+      <p>&nbsp;</p>
+    </div>
+
+    <a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="unsafe-url">Validate CSS</a>
+
+    
+  </footer>
+</div>
+</body>
+</html>
